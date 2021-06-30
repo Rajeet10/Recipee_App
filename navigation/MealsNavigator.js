@@ -1,6 +1,5 @@
 import React from 'react';
 import {createAppContainer} from 'react-navigation';
-import {createDrawerNavigator} from 'react-navigation-drawer'
 import {Platform} from 'react-native'
 import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
@@ -97,10 +96,7 @@ const FiltersNavigator=createStackNavigator({
 });
 
 
-const MainNavigator=createDrawerNavigator({
-    MealFavs:MealsFavTabNavigator,
-    Fiters:FiltersNavigator
-});
+;
 
 
-export default createAppContainer(MainNavigator);
+export default createAppContainer(MealsFavTabNavigator);
